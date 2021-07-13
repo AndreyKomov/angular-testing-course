@@ -26,13 +26,13 @@ describe('CoursesCardListComponent', () => {
     .then(() => {
       fixture = TestBed.createComponent(CoursesCardListComponent);
       component = fixture.componentInstance;
+      fixture.detectChanges();
       el = fixture.debugElement;
     })
   }))
 
   it("should create the component", () => {
-
-   expect(component).toBeTruthy;
+    expect(component).toBeTruthy;
 
   });
 
